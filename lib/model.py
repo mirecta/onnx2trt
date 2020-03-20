@@ -35,6 +35,14 @@ def preprocesImg(img, shape=(300, 300)):
     #return img.ravel()
     return img
 """
+"""
+On Jetson Nano
+
+export CPATH=$CPATH:/usr/local/cuda-10.0/targets/aarch64-linux/include
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.0/targets/aarch64-linux/lib
+pip3 install pycuda --user
+
+"""
 
 TRT_LOGGER = trt.Logger(trt.Logger.WARNING)
 
